@@ -22,7 +22,7 @@ chatbot-fastapi/
 │       └── chatbot.py       # Chatbot route for handling user questions
 └── static/
     └── index.html           # Simple UI for user interaction
-    
+
 ## Introduction
 
 ```
@@ -50,8 +50,11 @@ pip install -r requirements.txt
 3. ** configure environment variable**:
 ```
 create .env file and do the following 
+
 OPENAI_API_KEY=your_openai_api_key
+
 PINECONE_API_KEY=your_pinecone_api_key
+
 PINECONE_INDEX_NAME=your_index_name
 
 4. ** Add the Transcription File **: 
