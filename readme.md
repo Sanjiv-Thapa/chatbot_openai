@@ -23,9 +23,11 @@ chatbot-fastapi/
 └── static/
     └── index.html           # Simple UI for user interaction
 
+```
+
+
 ## Introduction
 
-```
 This chatbot API leverages OpenAI's language models to process natural language queries, using Pinecone for enhanced retrieval and search functionality. The context for responses is provided through a pre-generated transcription file (`transcription.txt`), allowing the chatbot to provide answers based on specific content relevant to your application.
 
 The API also includes a basic user interface (`index.html`) that allows users to interact with the chatbot directly from a browser. This setup is suitable for applications requiring contextual question-answering capabilities, including educational tools, customer support, and knowledge-based services.
