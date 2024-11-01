@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+langchain
+langchain-openai
+langchain-core
+langchain-community
+langchain-pinecone
+pinecone-client
+python-dotenv
+whisper
+pytube
+scikit-learn
+pydantic
+pydantic-settings
