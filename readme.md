@@ -60,6 +60,8 @@ PINECONE_INDEX_NAME=your_index_name
 4. ** Add the Transcription File **: 
 ```
 Place your transcription.txt file in the project root. This file serves as the contextual source for the chatbot's responses.
+
 5.** start the fastapi app**:
 ```
+
 uvicorn main:app --reload
