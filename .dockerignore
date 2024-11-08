@@ -1,0 +1,10 @@
+# Exclude environment file (you'll set these securely later)
+.env
+# Exclude Python cache files
+__pycache__/
+*.pyc
+# Exclude Git repository files
+.git
+# Exclude other unnecessary files
+.vscode/
+.DS_Store

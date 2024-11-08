@@ -42,14 +42,18 @@ The API also includes a basic user interface (`index.html`) that allows users to
 ## Setup
 ```
 1. **Clone the Repository**:
+
    ```bash
    git clone <repo-url>
    cd chatbot-fastapi
+   ```
 2. ** install dependencis**:
-
+```
 pip install -r requirements.txt
-
+```
 3. ** configure environment variable**:
+
+```
 create .env file and do the following 
 
 OPENAI_API_KEY=your_openai_api_key
@@ -63,6 +67,27 @@ PINECONE_INDEX_NAME=your_index_name
 ```
 Place your transcription.txt file in the project root. This file serves as the contextual source for the chatbot's responses.
 ```
-5.** start the fastapi app**:
+5. ** start the fastapi app**:
+
+```
 uvicorn main:app --reload
 ```
+6. ** Build the Docker Image:
+
+```
+docker build -t chatbot-fastapi .
+
+```
+7. ** Run the Docker Container:
+
+```
+docker run -p 8000:8000 --env-file .env chatbot-fastapi
+
+```
+8. ** Access the Application:
+```
+Once the container is running, go to http://localhost:8000 to access the FastAPI application.
+
+```
+
+

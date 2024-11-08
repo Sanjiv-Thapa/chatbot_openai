@@ -38,3 +38,6 @@ async def chat_with_bot(request: ChatRequest):
     except Exception as e:
         logging.error(f"Error processing request: {e}")
         raise HTTPException(status_code=500, detail=f"Internal Server Error: {e}")
+@router.options("/chat")
+async def options_chat():
+    return {"allow": ["OPTIONS", "POST"]}
